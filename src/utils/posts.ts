@@ -38,14 +38,15 @@ function parseFrontmatter(raw: string): { data: Record<string, string>; content:
   return { data, content }
 }
 
-const posts = import.meta.glob('@/posts/*.md', { eager: true, as: 'raw' })
+const posts = import.meta.glob('@/posts/*.md', { eager: true })
 
 export function getAllPosts(): Post[] {
   const postList: Post[] = []
 
-  for (const [path, raw] of Object.entries(posts)) {
+  for (const [path, module] of Object.entries(posts)) {
     const slug = path.split('/').pop()?.replace('.md', '') || ''
-    const { data, content } = parseFrontmatter(raw as string)
+    const raw = (module as { default: string }).default
+    const { data, content } = parseFrontmatter(raw)
     const html = md.render(content)
 
     postList.push({
