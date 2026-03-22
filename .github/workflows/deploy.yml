@@ -33,13 +33,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Vite SSG
-        run: npm run build
+      - name: Generate static site with Nuxt
+        run: npx nuxi generate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
 
   deploy:
     environment:
