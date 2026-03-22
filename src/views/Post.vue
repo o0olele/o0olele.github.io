@@ -2,15 +2,11 @@
 import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { getPostBySlug } from '@/utils/posts'
-import Counter from '@/components/Counter.vue'
+import MarkdownRenderer from '@/components/MarkdownRenderer.vue'
 
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 const post = computed(() => getPostBySlug(slug.value))
-
-const components = {
-  Counter,
-}
 </script>
 
 <template>
@@ -22,7 +18,7 @@ const components = {
     <article v-if="post" class="prose max-w-none">
       <h1 class="text-4xl font-bold mb-4">{{ post.title }}</h1>
       <p class="text-gray-500 mb-8">{{ post.date }}</p>
-      <component :is="{ template: post.html, components }" />
+      <MarkdownRenderer :html="post.html" />
     </article>
 
     <div v-else class="text-center py-12">
