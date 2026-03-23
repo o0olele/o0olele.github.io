@@ -1,24 +1,26 @@
-# Welcome to Nuxt Content Starter
+---
+seo:
+  title: Lost Blogs
+  description: lele lost its blogs.
+---
 
-This is the main page displaying Markdown located at [content/index.md](https://github.com/nuxt/starter/blob/content/content/index.md).
+::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
+---
+orientation: horizontal
+---
+#top
 
-Move to [about](/about) page.
+#title
+Lost Blogs.
 
-## Manage your Contents
+#links
+  :::u-button
+  ---
+  to: /golang
+  size: xl
+  ---
+  Find blogs
+  :::
 
-Create new pages or modify the existing ones in `content/` directory.
-
-## Query & Render Pages
-
-You can find an example of querying contents and rendering them in a [catch-all page](https://github.com/nuxt/starter/blob/content/app/pages/%5B...slug%5D.vue)
-
-## Integrate Vue Component
-
-::alert{color="green"}
-The current [alert](https://github.com/nuxt/starter/blob/content/app/components/Alert.vue) and the [counter](https://github.com/nuxt/starter/blob/content/app/components/Counter.vue) below are `Vue` components integrated into the Markdown.
+#default
 ::
-
-::counter
-::
-
-Checkout out the [documentation](https://content.nuxt.com/docs/getting-started) to learn more.
