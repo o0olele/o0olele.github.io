@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-og-image',
+    "@barzhsieh/nuxt-content-mermaid",
   ],
 
   devtools: {
