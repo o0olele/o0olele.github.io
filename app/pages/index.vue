@@ -6,7 +6,11 @@ const colorMode = useColorMode()
 useSeoMeta({
   titleTemplate: '',
   title: 'Lost Blogs',
-  description: 'A lonely boat in the sea of thoughts'
+  ogTitle: 'Lost Blogs',
+  ogDescription: 'A lonely boat in the sea of thoughts',
+  description: 'A lonely boat in the sea of thoughts',
+  ogImage: 'https://o0olele.github.io/_ipx/_/home.png',
+  twitterImage: 'https://o0olele.github.io/_ipx/_/home.png'
 })
 
 const canvasRef = ref<HTMLCanvasElement | null>(null)
