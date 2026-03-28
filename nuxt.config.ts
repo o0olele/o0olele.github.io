@@ -7,7 +7,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-og-image',
     "@barzhsieh/nuxt-content-mermaid",
+    '@nuxtjs/sitemap',
   ],
+
+  site: {
+    url: 'https://o0olele.github.io',
+  },
 
   devtools: {
     enabled: false

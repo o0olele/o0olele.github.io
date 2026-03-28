@@ -9,8 +9,8 @@ useSeoMeta({
   ogTitle: 'Lost Blogs',
   ogDescription: 'A lonely boat in the sea of thoughts',
   description: 'A lonely boat in the sea of thoughts',
-  ogImage: 'https://o0olele.github.io/_ipx/_/home.png',
-  twitterImage: 'https://o0olele.github.io/_ipx/_/home.png'
+  ogImage: 'https://o0olele.github.io/home.png',
+  twitterImage: 'https://o0olele.github.io/home.png'
 })
 
 const canvasRef = ref<HTMLCanvasElement | null>(null)
