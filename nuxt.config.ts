@@ -14,6 +14,14 @@ export default defineNuxtConfig({
     url: 'https://o0olele.github.io',
   },
 
+  app: {
+    head: {
+      meta: [
+        { name: 'google-site-verification', content: 'dpSdHfeHoQ51HiXVctYippT5i2HFJb7O4reCyDAPw4k' }
+      ]
+    }
+  },
+
   devtools: {
     enabled: false
   },
