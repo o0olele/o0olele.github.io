@@ -14,7 +14,7 @@ useHead({
     { rel: 'icon', href: '/favicon.jpg' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'zh-CN'
   }
 })
 
