@@ -67,4 +67,13 @@ export default defineNuxtConfig({
     fonts: false
   },
 
+  ogImage: {
+    fonts: [
+      {
+        name: 'Source Han Sans SC',
+        path: '/SourceHanSansCN-Regular.ttf',
+        weight: 400
+      }
+    ]
+  },
 })

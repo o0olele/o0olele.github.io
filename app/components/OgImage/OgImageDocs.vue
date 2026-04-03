@@ -9,7 +9,7 @@ const description = computed(() => (props.description || '').slice(0, 200))
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col justify-center bg-[#020420]">
+  <div class="w-full h-full flex flex-col justify-center bg-[#020420]" style="font-family: 'Source Han Sans SC', sans-serif;">
     <svg
       class="absolute right-0 top-0"
       width="629"
