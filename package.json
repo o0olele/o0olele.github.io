@@ -27,6 +27,8 @@
     "nuxt": "^4.4.2",
     "nuxt-llms": "0.2.0",
     "nuxt-og-image": "^5.1.13",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "tailwindcss": "^4.2.1",
     "three": "^0.183.2",
     "ufo": "^1.6.3",

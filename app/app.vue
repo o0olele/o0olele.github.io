@@ -11,7 +11,8 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.jpg' }
+    { rel: 'icon', href: '/favicon.jpg' },
+    { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css' }
   ],
   htmlAttrs: {
     lang: 'zh-CN'

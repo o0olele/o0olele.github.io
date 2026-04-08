@@ -1,3 +1,6 @@
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -34,7 +37,13 @@ export default defineNuxtConfig({
       markdown: {
         toc: {
           searchDepth: 1
-        }
+        },
+         remarkPlugins: {
+                "remark-math": {},
+            },
+            rehypePlugins: { 
+                "rehype-katex": {} 
+            },
       }
     }
   },
